@@ -1,4 +1,5 @@
 /include/ "system-conf.dtsi"
+/include/ "openamp.dtsi"
 / {
         // This is already in U96 V1 DT except for on delay, so we'll merge it in
         sdio_pwrseq: sdio_pwrseq {
