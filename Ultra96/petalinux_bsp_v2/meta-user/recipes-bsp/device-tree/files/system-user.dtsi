@@ -83,6 +83,42 @@
         };
 };
 
+&amba {
+        uio1@80000000 {
+                compatible = "generic-uio";
+                reg = <0x0 0x80000000 0x0 0x10000>;
+        };
+
+        uio2@80010000 {
+                compatible = "generic-uio";
+                reg = <0x0 0x80010000 0x0 0x10000>;
+        };
+
+        uio3@80020000 {
+                compatible = "generic-uio";
+                reg = <0x0 0x80020000 0x0 0x10000>;
+        };
+
+        uio4@80030000 {
+                compatible = "generic-uio";
+                reg = <0x0 0x80030000 0x0 0x10000>;
+        };
+
+        uio5@80040000 {
+                compatible = "generic-uio";
+                reg = <0x0 0x80040000 0x0 0x40000>;
+        };
+
+        uio6@80080000 {
+                compatible = "generic-uio";
+                reg = <0x0 0x80080000 0x0 0x40000>;
+        };
+
+        uio7@800C0000 {
+                compatible = "generic-uio";
+                reg = <0x0 0x800C0000 0x0 0x40000>;
+        };
+};
 /////////////////////////////////////////////////////////////////////////////////
 //
 // NOTE: This content is redundant (a duplicate of what is in the PetaLinux bsp)
