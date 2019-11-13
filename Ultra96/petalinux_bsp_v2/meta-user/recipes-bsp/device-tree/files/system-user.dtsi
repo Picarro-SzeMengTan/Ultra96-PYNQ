@@ -1,4 +1,5 @@
 /include/ "system-conf.dtsi"
+/include/ "openamp.dtsi"
 / {
 	sdio_pwrseq: sdio_pwrseq {
 		compatible = "mmc-pwrseq-simple";
