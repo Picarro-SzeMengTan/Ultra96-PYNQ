@@ -1,4 +1,4 @@
-//include/ "system-conf.dtsi"
+/include/ "system-conf.dtsi"
 /include/ "openamp.dtsi"
 / {
 	// This is already in U96 V1 DT except for on delay, so we'll merge it in
@@ -10,7 +10,7 @@
 		chip_en-gpios = <&gpio 8 1>;  // This REQUIRES a patched pwrseq_simple.c to have it use this pin properly for the WILC3000 wifi part
 	};
 
-	// Remove V1 Power ON/OFF controller from U96 V1 DT
+	/git push --set-upstream origin v2.5.0_with_openamp/ Remove V1 Power ON/OFF controller from U96 V1 DT
 	/delete-node/ ltc2954;
 };
 
@@ -54,7 +54,7 @@
 	};
 	// Remove TI child node from U96 V1 DT
 	/delete-node/wifi@2;
-};
+};git push --set-upstream origin v2.5.0_with_openamp
 
 &spi0 {
         is-decoded-cs = <0>;
